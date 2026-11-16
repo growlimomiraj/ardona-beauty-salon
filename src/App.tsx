@@ -1,77 +1,70 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { AboutSection } from './components/AboutSection';
-import { ServicesMenu } from './components/ServicesMenu';
-import { ReviewsSection } from './components/ReviewsSection';
-import { FAQSection } from './components/FAQSection';
 import { Footer } from './components/Footer';
 import { MobileBottomBar } from './components/MobileBottomBar';
-import { PromotionsView } from './components/PromotionsView';
-import { BlogView } from './components/BlogView';
+import { HomePage } from './pages/HomePage';
+import { AboutPage } from './pages/AboutPage';
+import { ServicesPage } from './pages/ServicesPage';
+import { PromotionsPage } from './pages/PromotionsPage';
+import { BlogPage } from './pages/BlogPage';
+import { ContactPage } from './pages/ContactPage';
 
 export const App: React.FC = () => {
   const [activePage, setActivePage] = useState<string>('home');
 
+  const resolvePageFromUrl = (): string => {
+    const hash = window.location.hash.replace('#', '').toLowerCase();
+    const path = window.location.pathname.replace(/^\/|\/$/g, '').toLowerCase();
+
+    const target = hash || path;
+
+    if (target === 'about' || target === 'about-us') return 'about';
+    if (target === 'services' || target === 'our-services') return 'services';
+    if (target === 'promotions' || target === 'promos-offers') return 'promotions';
+    if (target === 'blog') return 'blog';
+    if (target === 'contact' || target === 'contact-us') return 'contact';
+    return 'home';
+  };
+
   useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash.replace('#', '');
-      if (['home', 'about', 'services', 'promotions', 'blog', 'contact'].includes(hash)) {
-        setActivePage(hash);
-      }
+    const handleUrlChange = () => {
+      const page = resolvePageFromUrl();
+      setActivePage(page);
     };
 
-    if (window.location.hash) {
-      handleHashChange();
-    }
+    handleUrlChange();
 
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener('hashchange', handleUrlChange);
+    window.addEventListener('popstate', handleUrlChange);
+    return () => {
+      window.removeEventListener('hashchange', handleUrlChange);
+      window.removeEventListener('popstate', handleUrlChange);
+    };
   }, []);
 
   const handleNavClick = (pageId: string) => {
-    setActivePage(pageId);
-    window.location.hash = pageId;
+    let cleanId = pageId.toLowerCase().replace('#', '');
+    if (cleanId === 'about-us') cleanId = 'about';
+    if (cleanId === 'our-services') cleanId = 'services';
+    if (cleanId === 'promos-offers') cleanId = 'promotions';
+    if (cleanId === 'contact-us') cleanId = 'contact';
 
-    if (pageId === 'home') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else if (['about', 'services', 'faq'].includes(pageId)) {
-      setTimeout(() => {
-        const el = document.getElementById(pageId);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 50);
-    } else if (pageId === 'contact') {
-      setTimeout(() => {
-        const el = document.getElementById('faq');
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 50);
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+    setActivePage(cleanId);
+    window.location.hash = cleanId === 'home' ? 'home' : cleanId;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <>
       <Header activePage={activePage} setActivePage={handleNavClick} />
 
-      <main>
-        {activePage === 'promotions' ? (
-          <PromotionsView />
-        ) : activePage === 'blog' ? (
-          <BlogView />
-        ) : (
-          <>
-            <Hero />
-            <AboutSection />
-            <ServicesMenu />
-            <ReviewsSection />
-            <FAQSection />
-          </>
-        )}
+      <main id="primary" className="site-main">
+        {activePage === 'about' && <AboutPage />}
+        {activePage === 'services' && <ServicesPage />}
+        {activePage === 'promotions' && <PromotionsPage />}
+        {activePage === 'blog' && <BlogPage />}
+        {activePage === 'contact' && <ContactPage />}
+        {activePage === 'home' && <HomePage />}
       </main>
 
       <Footer onNavClick={handleNavClick} />
