@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Production build output
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Editor
+.env
+.env.local
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large scraped reference dumps
+ardona.html
+ardona_book.html
+full_css_dump.txt
+onesalon.html
+onesalon_about.html
+onesalon_contact.html
+onesalon_services.html
+wix_booking_script.js
+scripts/reputation_widget.html
+scripts/reputation_main.css

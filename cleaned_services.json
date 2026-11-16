@@ -1,0 +1,470 @@
+[
+  {
+    "id": "a837bc34-74b0-4eee-83f7-4ea1a938f540",
+    "name": "Color Gloss",
+    "category": "Color",
+    "description": "Please,read before booking!Please book a haircut(which comes with a blow out)or just a blowout.Please note blowouts are NOT includes in ANY color services.A clear gloss is a gentle,ammonia free semi permanent formula that adds luminous clear shine to natural color treated hair.Clear gloss does NOT change your color or cover any grey hair,if your looking to change your color or to cover any grey hair please book for a whole head color.",
+    "duration_mins": 30,
+    "rate_type": "FIXED",
+    "price": "85",
+    "discount_name": "fall discount",
+    "price_after_discount": "76.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/color-gloss', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/color-gloss'}",
+    "slug": {
+      "relativePath": "/booking-calendar/color-gloss",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/color-gloss"
+    }
+  },
+  {
+    "id": "30686a10-3fde-4428-b36b-9e45ad63e866",
+    "name": "Single Process (roots only)",
+    "category": "Color",
+    "description": "Please,book haircut or blowouts after the single proces.This technique is good for grey coverage and\\or smudging of the roots.The color is applied only on the roots hair only.",
+    "duration_mins": 45,
+    "rate_type": "FIXED",
+    "price": "95",
+    "discount_name": "fall discount",
+    "price_after_discount": "85.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/single-process-roots-only', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/single-process-roots-only'}",
+    "slug": {
+      "relativePath": "/booking-calendar/single-process-roots-only",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/single-process-roots-only"
+    }
+  },
+  {
+    "id": "282866d8-0234-4800-a126-c90837fd64b3",
+    "name": "Single Process INOA",
+    "category": "Color",
+    "description": "Ammonia free permanent color.This techniqueis a new groth color touch up.Great for grey hair coverage.Start 95$",
+    "duration_mins": 60,
+    "rate_type": "FIXED",
+    "price": "110",
+    "discount_name": "fall discount",
+    "price_after_discount": "99",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/single-process-inoa', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/single-process-inoa'}",
+    "slug": {
+      "relativePath": "/booking-calendar/single-process-inoa",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/single-process-inoa"
+    }
+  },
+  {
+    "id": "fc259734-8e6c-4b7e-a80e-d98e54bc9573",
+    "name": "Double Process",
+    "category": "Color",
+    "description": "In this service the color is lifted from your hair and your desired color is then deposited.Start 205$ UP",
+    "duration_mins": 85,
+    "rate_type": "FIXED",
+    "price": "205",
+    "discount_name": "fall discount",
+    "price_after_discount": "184.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/double-process', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/double-process'}",
+    "slug": {
+      "relativePath": "/booking-calendar/double-process",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/double-process"
+    }
+  },
+  {
+    "id": "1b2c2e36-bebc-49ec-936c-8ae74357180b",
+    "name": "Highlights Half Head",
+    "category": "Color",
+    "description": "Please ,read before booking!Please NOT blowouts are included in ANY colorservices,please book accordingly.This highlighting technicue has highlights placed on thetwo front panels of the head and the top of head.This technique does not iclude highlihts on the nape of head.Start 195$",
+    "duration_mins": 90,
+    "rate_type": "FIXED",
+    "price": "235",
+    "discount_name": "fall discount",
+    "price_after_discount": "211.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/highlights-half-head', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/highlights-half-head'}",
+    "slug": {
+      "relativePath": "/booking-calendar/highlights-half-head",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/highlights-half-head"
+    }
+  },
+  {
+    "id": "4c44acff-dbd8-4773-a4e3-daffd218ea15",
+    "name": "Highlights Full Head",
+    "category": "Color",
+    "description": "Please,read before booking!Please note blowouts are NOT included in ANYcolor services.The price ranges between 255$UP \nFor any question or anything you dont like,you can return it within one week of the service  being provided and it will be free of charge.",
+    "duration_mins": 150,
+    "rate_type": "FIXED",
+    "price": "275",
+    "discount_name": "fall discount",
+    "price_after_discount": "247.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/highlights-full-head', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/highlights-full-head'}",
+    "slug": {
+      "relativePath": "/booking-calendar/highlights-full-head",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/highlights-full-head"
+    }
+  },
+  {
+    "id": "012af600-b40c-4416-aafa-35f690abceb2",
+    "name": "Balayage/Ombre",
+    "category": "Color",
+    "description": "Please,read before booking!Balayge is a technique for highlighting the hair in which the color is painted on to create graduated,natural looking effect.Start 295$ UP.For any questions or anything you dont like,you can return it within one week of the service being provided and it will be free of charge'",
+    "duration_mins": 150,
+    "rate_type": "FIXED",
+    "price": "320",
+    "discount_name": "fall discount",
+    "price_after_discount": "288",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/balayage-ombre', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/balayage-ombre'}",
+    "slug": {
+      "relativePath": "/booking-calendar/balayage-ombre",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/balayage-ombre"
+    }
+  },
+  {
+    "id": "bfbcd8c8-d676-4af0-9a6f-54ceca8bb0db",
+    "name": "Single Process (full head)",
+    "category": "Color",
+    "description": "This technique is a full head (from roots to ends of hair) one process color application.Start 145$",
+    "duration_mins": 60,
+    "rate_type": "FIXED",
+    "price": "145",
+    "discount_name": "fall discount",
+    "price_after_discount": "130.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/single-process-full-head', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/single-process-full-head'}",
+    "slug": {
+      "relativePath": "/booking-calendar/single-process-full-head",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/single-process-full-head"
+    }
+  },
+  {
+    "id": "5064d519-fb55-4c18-bb58-1835bd93988b",
+    "name": "Color Correction",
+    "category": "Color",
+    "description": "Prices & details available upon request of appointment",
+    "duration_mins": 60,
+    "rate_type": "CUSTOM",
+    "price": {
+      "description": "235 $to 450$"
+    },
+    "discount_name": "",
+    "price_after_discount": "",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/color-correction', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/color-correction'}",
+    "slug": {
+      "relativePath": "/booking-calendar/color-correction",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/color-correction"
+    }
+  },
+  {
+    "id": "5ddb5637-1ac1-4610-a896-9ccd0bda022d",
+    "name": "Partial highlights",
+    "category": "Color",
+    "description": "Partial highlights,Start 165$ UP",
+    "duration_mins": 90,
+    "rate_type": "FIXED",
+    "price": "165",
+    "discount_name": "fall discount",
+    "price_after_discount": "148.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/partial-highlights', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/partial-highlights'}",
+    "slug": {
+      "relativePath": "/booking-calendar/partial-highlights",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/partial-highlights"
+    }
+  },
+  {
+    "id": "93e362e6-eaab-4659-ac9b-2f68fc7f3c1f",
+    "name": "Hot tools",
+    "category": "Color",
+    "description": "Start 10$ UP",
+    "duration_mins": 15,
+    "rate_type": "FIXED",
+    "price": "10",
+    "discount_name": "fall discount",
+    "price_after_discount": "9",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/hot-tools', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/hot-tools'}",
+    "slug": {
+      "relativePath": "/booking-calendar/hot-tools",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/hot-tools"
+    }
+  },
+  {
+    "id": "85285347-1177-41fa-ab01-bb7a13db363e",
+    "name": "Women wash & cut",
+    "category": "Color",
+    "description": "Included wash,Start 65$ UP",
+    "duration_mins": 45,
+    "rate_type": "FIXED",
+    "price": "75",
+    "discount_name": "fall discount",
+    "price_after_discount": "67.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/women-wash-cut', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/women-wash-cut'}",
+    "slug": {
+      "relativePath": "/booking-calendar/women-wash-cut",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/women-wash-cut"
+    }
+  },
+  {
+    "id": "3f10a053-556d-4a1e-9fd9-025b017ad5d7",
+    "name": "Wash & cut  girls",
+    "category": "Color",
+    "description": "Start 50$ UP",
+    "duration_mins": 45,
+    "rate_type": "FIXED",
+    "price": "50",
+    "discount_name": "fall discount",
+    "price_after_discount": "45",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/wash-cut-girls', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/wash-cut-girls'}",
+    "slug": {
+      "relativePath": "/booking-calendar/wash-cut-girls",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/wash-cut-girls"
+    }
+  },
+  {
+    "id": "2c514a35-4ee9-44f6-9934-307fba42777d",
+    "name": "Wash & cut boys",
+    "category": "Color",
+    "description": "Start 30$ UP",
+    "duration_mins": 30,
+    "rate_type": "FIXED",
+    "price": "35",
+    "discount_name": "fall discount",
+    "price_after_discount": "31.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/wash-cut-boys', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/wash-cut-boys'}",
+    "slug": {
+      "relativePath": "/booking-calendar/wash-cut-boys",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/wash-cut-boys"
+    }
+  },
+  {
+    "id": "f26153ec-bb3b-4eb1-91d5-d1474544b6b7",
+    "name": "Infusion hair treatment",
+    "category": "Color",
+    "description": "Start 75$ UP",
+    "duration_mins": 60,
+    "rate_type": "FIXED",
+    "price": "75",
+    "discount_name": "fall discount",
+    "price_after_discount": "67.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/infusion-hair-treatment-1', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/infusion-hair-treatment-1'}",
+    "slug": {
+      "relativePath": "/booking-calendar/infusion-hair-treatment-1",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/infusion-hair-treatment-1"
+    }
+  },
+  {
+    "id": "977d9e41-defd-48a5-b032-7f390b8d6f69",
+    "name": "Low lights",
+    "category": "Color",
+    "description": "half head low lights",
+    "duration_mins": 60,
+    "rate_type": "FIXED",
+    "price": "95",
+    "discount_name": "fall discount",
+    "price_after_discount": "85.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/low-lights-1', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/low-lights-1'}",
+    "slug": {
+      "relativePath": "/booking-calendar/low-lights-1",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/low-lights-1"
+    }
+  },
+  {
+    "id": "7a1d2772-f3c7-41d4-9bf3-247eb72651ea",
+    "name": "Full head low lights",
+    "category": "Color",
+    "description": "full head low lights",
+    "duration_mins": 90,
+    "rate_type": "FIXED",
+    "price": "155",
+    "discount_name": "fall discount",
+    "price_after_discount": "139.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/full-head-low-lights-1', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/full-head-low-lights-1'}",
+    "slug": {
+      "relativePath": "/booking-calendar/full-head-low-lights-1",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/full-head-low-lights-1"
+    }
+  },
+  {
+    "id": "ddeee580-6e5f-4ee3-804b-c7e611d9e256",
+    "name": "Milbon treatment",
+    "category": "Color",
+    "description": "",
+    "duration_mins": 30,
+    "rate_type": "FIXED",
+    "price": "55",
+    "discount_name": "fall discount",
+    "price_after_discount": "49.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/milbon-treatment-1', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/milbon-treatment-1'}",
+    "slug": {
+      "relativePath": "/booking-calendar/milbon-treatment-1",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/milbon-treatment-1"
+    }
+  },
+  {
+    "id": "c7d1ab6e-759e-44ce-983a-ae65ec85a505",
+    "name": "Babylights",
+    "category": "Color",
+    "description": "Please,read before booking!Babylights are a similar technique to highlights but provide a more delicate look.The main difference is the amunt of hair in & between each section.These section will be finer than traditional highlights & generally takes longer to do.",
+    "duration_mins": 180,
+    "rate_type": "FIXED",
+    "price": "295",
+    "discount_name": "fall discount",
+    "price_after_discount": "265.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/babylights', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/babylights'}",
+    "slug": {
+      "relativePath": "/booking-calendar/babylights",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/babylights"
+    }
+  },
+  {
+    "id": "9e001060-3d7f-4628-92b0-bce92315ecd9",
+    "name": "Men's Haircut",
+    "category": "Cut & Style",
+    "description": "Includes a wash.",
+    "duration_mins": 20,
+    "rate_type": "FIXED",
+    "price": "45",
+    "discount_name": "fall discount",
+    "price_after_discount": "40.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/men-s-haircut', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/men-s-haircut'}",
+    "slug": {
+      "relativePath": "/booking-calendar/men-s-haircut",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/men-s-haircut"
+    }
+  },
+  {
+    "id": "11a0f7bd-bba7-4013-a034-c8983bbcb8f1",
+    "name": "Wash cut blow dry women",
+    "category": "Cut & Style",
+    "description": "The price depends on type of hair,is included the wash 95$ and up",
+    "duration_mins": 45,
+    "rate_type": "FIXED",
+    "price": "95",
+    "discount_name": "fall discount",
+    "price_after_discount": "85.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/wash-cut-blow-dry-women-1', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/wash-cut-blow-dry-women-1'}",
+    "slug": {
+      "relativePath": "/booking-calendar/wash-cut-blow-dry-women-1",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/wash-cut-blow-dry-women-1"
+    }
+  },
+  {
+    "id": "00d71bb2-b13d-49fc-8987-796f41774762",
+    "name": "Blow Out",
+    "category": "Cut & Style",
+    "description": "Includes a wash.Start 40$ UP ",
+    "duration_mins": 25,
+    "rate_type": "FIXED",
+    "price": "45",
+    "discount_name": "fall discount",
+    "price_after_discount": "40.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/blow-out', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/blow-out'}",
+    "slug": {
+      "relativePath": "/booking-calendar/blow-out",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/blow-out"
+    }
+  },
+  {
+    "id": "cbf2789e-74b3-4768-83a4-5576e27f6de5",
+    "name": "Updo's",
+    "category": "Cut & Style",
+    "description": "",
+    "duration_mins": 60,
+    "rate_type": "FIXED",
+    "price": "75",
+    "discount_name": "fall discount",
+    "price_after_discount": "67.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/updo-s', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/updo-s'}",
+    "slug": {
+      "relativePath": "/booking-calendar/updo-s",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/updo-s"
+    }
+  },
+  {
+    "id": "0da6adf0-6762-4c16-9329-50304b0965fb",
+    "name": "Deep condicioner",
+    "category": "Treatments",
+    "description": "No 1 & 2, is an awesome way of cross linking the disulphide bonds in your hair that have broken down due to straightening, bleaching, colouring etc. Your hair is left stronger and not fragile.Start 40$ UP",
+    "duration_mins": 30,
+    "rate_type": "FIXED",
+    "price": "40",
+    "discount_name": "fall discount",
+    "price_after_discount": "36",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/deep-condicioner', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/deep-condicioner'}",
+    "slug": {
+      "relativePath": "/booking-calendar/deep-condicioner",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/deep-condicioner"
+    }
+  },
+  {
+    "id": "5425bc9a-0665-4189-98cc-6e6ef53dd7ab",
+    "name": "Clear Gloss",
+    "category": "Treatments",
+    "description": "Leaves a shine coat to the hair, as well as conditions.Start 55$ UP",
+    "duration_mins": 60,
+    "rate_type": "FIXED",
+    "price": "55",
+    "discount_name": "fall discount",
+    "price_after_discount": "49.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/clear-gloss', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/clear-gloss'}",
+    "slug": {
+      "relativePath": "/booking-calendar/clear-gloss",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/clear-gloss"
+    }
+  },
+  {
+    "id": "2a04706d-76b7-4aff-8e88-dc5a17ca2861",
+    "name": "keratin treatment",
+    "category": "Texturizing",
+    "description": "Removes 100% frizz and 90% of curl. Produces a silky smooth finish for up to 4 months.Start 290$ UP",
+    "duration_mins": 120,
+    "rate_type": "FIXED",
+    "price": "320",
+    "discount_name": "fall discount",
+    "price_after_discount": "288",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/keratin-treatment', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/keratin-treatment'}",
+    "slug": {
+      "relativePath": "/booking-calendar/keratin-treatment",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/keratin-treatment"
+    }
+  },
+  {
+    "id": "e1098474-e938-4d1b-9120-2dc68a2338fd",
+    "name": "Brazilian Blowout",
+    "category": "Texturizing",
+    "description": "Smoothing treatment that actually improves the condition of the hair by creating a protective protein layer around the hair shaft to eliminate frizz and smooth the cuticle. Lasts up to 12 weeks.Start 320$ UP",
+    "duration_mins": 120,
+    "rate_type": "FIXED",
+    "price": "350",
+    "discount_name": "fall discount",
+    "price_after_discount": "315",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/brazilian-blowout', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/brazilian-blowout'}",
+    "slug": {
+      "relativePath": "/booking-calendar/brazilian-blowout",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/brazilian-blowout"
+    }
+  },
+  {
+    "id": "21703dd6-4493-4645-9c81-2256ef89bad0",
+    "name": "Make Up",
+    "category": "Make Up",
+    "description": "",
+    "duration_mins": 60,
+    "rate_type": "FIXED",
+    "price": "95",
+    "discount_name": "fall discount",
+    "price_after_discount": "85.5",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/make-up', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/make-up'}",
+    "slug": {
+      "relativePath": "/booking-calendar/make-up",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/make-up"
+    }
+  },
+  {
+    "id": "40af47db-5d40-455d-9924-e840bda12149",
+    "name": "Extensions",
+    "category": "Extensions",
+    "description": "",
+    "duration_mins": 180,
+    "rate_type": "CUSTOM",
+    "price": {
+      "description": "based on consult"
+    },
+    "discount_name": "",
+    "price_after_discount": "",
+    "booking_url": "https://www.ardonabeautysalon.com{'relativePath': '/booking-calendar/extensions', 'url': 'https://www.ardonabeautysalon.com/booking-calendar/extensions'}",
+    "slug": {
+      "relativePath": "/booking-calendar/extensions",
+      "url": "https://www.ardonabeautysalon.com/booking-calendar/extensions"
+    }
+  }
+]
