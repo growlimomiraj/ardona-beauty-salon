@@ -83,9 +83,9 @@ export const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => 
                 <img
                   src="/icons/ardona-header-logo.svg"
                   className="custom-logo"
-                  width="255"
-                  height="42"
-                  alt="Ardona Salon Upper West Side Manhattan NYC"
+                  width="226"
+                  height="60"
+                  alt="Ardona Beauty Salon"
                 />
               </a>
             </div>

@@ -99,6 +99,18 @@ button:focus {
 header .section-header {
   padding: 40px 0;
 }
+header .logo img {
+  height: 54px;
+  width: auto;
+  max-width: 240px;
+  display: block;
+}
+.logo-footer img {
+  height: 52px;
+  width: auto;
+  max-width: 240px;
+  display: block;
+}
 header .menu ul {
   display: flex;
   align-items: center;
@@ -1050,6 +1062,11 @@ section.section-services.after .brd {
 	}
 }
 @media only screen and (max-width: 776px) {
+  header .logo img {
+    height: 42px !important;
+    width: auto !important;
+    max-width: 180px !important;
+  }
   section.section-banner {
     height: auto !important;
     min-height: 0 !important;

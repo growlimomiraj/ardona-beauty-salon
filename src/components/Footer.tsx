@@ -52,8 +52,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavClick }) => {
                 <img
                   alt="Ardona Beauty Salon"
                   src="/icons/ardona-footer-logo.svg"
-                  height="38"
-                  width="200"
+                  height="60"
+                  width="226"
                 />
               </a>
               <p>© Copyright 2024 Ardona Beauty Salon | All Rights Reserved.</p>
