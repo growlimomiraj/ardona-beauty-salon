@@ -5,11 +5,7 @@ export const Hero: React.FC = () => {
   return (
     <>
       <div className="container full">
-        <section
-          id="home"
-          className="section-banner"
-          style={{ backgroundImage: `url('/images/hero-banner.jpg')` }}
-        >
+        <section id="home" className="section-banner">
           <div className="heading-banner">
             <h1>
               <span>Ardona Salon</span> - Expert <br />
