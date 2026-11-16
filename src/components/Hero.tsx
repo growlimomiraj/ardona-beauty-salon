@@ -6,6 +6,14 @@ export const Hero: React.FC = () => {
     <>
       <div className="container full">
         <section id="home" className="section-banner">
+          <div className="mobile-hero-media">
+            <img
+              src="/images/hero-banner-mobile.jpg"
+              alt="Ardona Beauty Salon Storefront 2578 Broadway NYC"
+              className="mobile-storefront-img"
+            />
+          </div>
+
           <div className="heading-banner">
             <h1>
               <span>Ardona Salon</span> - Expert <br />
