@@ -91,7 +91,7 @@ export const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => 
             </div>
 
             <div className={`menu ${mobileMenuOpen ? 'active' : ''}`}>
-              <ul className="menu" id="menu-menu-1">
+              <ul className="menu-nav-list" id="menu-menu-1">
                 {navItems.map((item) => (
                   <li
                     key={item.id}
@@ -108,6 +108,16 @@ export const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => 
                     </a>
                   </li>
                 ))}
+                <li className="menu-item menu-item-book-mobile">
+                  <a
+                    href={SALON_INFO.bookingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mobile-drawer-book-btn"
+                  >
+                    Book now
+                  </a>
+                </li>
               </ul>
             </div>
 

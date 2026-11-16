@@ -128,6 +128,9 @@ header .menu ul li a:hover {
   border: 1px solid #BFC3CF;
   padding: 10px 29px;
 }
+.menu-item-book-mobile {
+  display: none;
+}
 .container.full {
   max-width: 1720px;
 }
@@ -664,11 +667,11 @@ text-align: center;
   right: 0;
   bottom: 0;
   top: 0;
-  background: #00000087;
+  background: rgba(0, 0, 0, 0.65);
   opacity: 0;
   visibility: hidden;
-  transition: 1s;
-  z-index: 1111;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 99990;
 }
 .toggle-nav {
   background: transparent;
@@ -914,26 +917,29 @@ section.section-services.after .brd {
 	section.section-banner {
 		height: 730px;
 	}
-	header section.section-header .menu {
+	header section.section-header div.menu {
 		left: inherit;
         position: fixed;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        flex-wrap: nowrap;
         align-content: baseline;
         margin: 0;
-        transition: .5s;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         top: 0;
         bottom: 0;
         transform: perspective(1000px) translateX(100%);
         transform-origin: right center 0cm;
         width: 300px;
         right: 0;
-        background-color: #000;
-        height: 100%;
-        padding: 100px 0px 0px 20px;
+        background-color: #0A0A0A;
+        height: 100vh;
+        padding: 90px 25px 40px 30px;
 		z-index: 99999;
+        overflow-y: auto;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.85);
     }
-    header section.section-header .menu.active {
+    header section.section-header div.menu.active {
         transform: none;
     }
     .mobile-burger {
@@ -942,15 +948,72 @@ section.section-services.after .brd {
 	section.section-header .book-now {
 		display: none;
 	}
+    header section.section-header .menu ul {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+        position: static !important;
+        transform: none !important;
+        background: transparent !important;
+        height: auto !important;
+    }
 	header .menu ul li {
-		width: 100%;
-		margin: 10px 0 0 0px;
+		width: 100% !important;
+		margin: 0 0 18px 0 !important;
+        list-style: none !important;
+        text-align: left !important;
 	}
+    header .menu ul li:first-child {
+        margin-left: 0 !important;
+    }
 	button.toggle-nav.active {
-		top: -70px;
+		position: fixed !important;
+        top: 25px !important;
+        right: 25px !important;
+        z-index: 1000000 !important;
+        height: 30px !important;
+        width: 30px !important;
 	}
 	header .menu ul li a {
-        font-size: 15px;
+        display: inline-block !important;
+        color: #FFFFFF !important;
+        font-family: "Montserrat-Bold", sans-serif !important;
+        font-size: 16px !important;
+        letter-spacing: 1.5px !important;
+        text-transform: uppercase !important;
+        padding: 6px 0 !important;
+        transition: color 0.2s ease !important;
+    }
+    header .menu ul li.current-menu-item a,
+    header .menu ul li a:hover {
+        color: #C59D5F !important;
+    }
+    .menu-item-book-mobile {
+        display: block !important;
+        margin-top: 10px !important;
+    }
+    .mobile-drawer-book-btn {
+        display: inline-block !important;
+        margin-top: 10px !important;
+        padding: 12px 28px !important;
+        background: transparent !important;
+        border: 1px solid #C59D5F !important;
+        color: #C59D5F !important;
+        font-family: "Montserrat-Bold", sans-serif !important;
+        font-size: 12px !important;
+        letter-spacing: 1.8px !important;
+        text-transform: uppercase !important;
+        text-align: center !important;
+        border-radius: 2px !important;
+        transition: all 0.3s ease !important;
+    }
+    .mobile-drawer-book-btn:hover {
+        background: #C59D5F !important;
+        color: #000000 !important;
     }
 	.section-services .heading::after {
 		content: none;
