@@ -1,7 +1,8 @@
 import React from 'react';
-import { SALON_INFO } from '../data/salonData';
+import { useBookingCart } from '../context/BookingCartContext';
 
 export const BlogView: React.FC = () => {
+  const { openCart } = useBookingCart();
   const articles = [
     {
       id: 1,
@@ -66,23 +67,25 @@ export const BlogView: React.FC = () => {
                     {post.excerpt}
                   </p>
                 </div>
-                <a
-                  href={SALON_INFO.bookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  className="red-btn"
                   style={{
-                    color: '#C59D5F',
-                    fontWeight: 700,
-                    textTransform: 'uppercase',
-                    fontSize: '13px',
-                    letterSpacing: '1px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px'
+                    padding: '10px 18px',
+                    fontSize: '12px',
+                    borderRadius: '3px'
                   }}
+                  onClick={() => openCart({
+                    id: `blog-consult-${post.id}`,
+                    name: `Consultation: ${post.title}`,
+                    category: 'Consultation',
+                    price: 0,
+                    priceFormatted: 'Free',
+                    duration: '20 min'
+                  })}
                 >
                   Book A Consultation →
-                </a>
+                </button>
               </div>
             ))}
           </div>

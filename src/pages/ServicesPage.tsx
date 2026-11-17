@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { CATEGORIES } from '../components/ServicesMenu';
-import { SALON_INFO } from '../data/salonData';
+import { useBookingCart } from '../context/BookingCartContext';
 
 export const ServicesPage: React.FC = () => {
   const [openCategory, setOpenCategory] = useState<string | null>(null);
   const [selectedFilter, setSelectedFilter] = useState<string>('all');
+  const { openCart } = useBookingCart();
 
   const toggleCategory = (id: string) => {
     setOpenCategory((prev) => (prev === id ? null : id));
@@ -24,9 +25,13 @@ export const ServicesPage: React.FC = () => {
         >
           <h1>Our Services</h1>
           <div className="appointment">
-            <a href={SALON_INFO.bookingUrl} target="_blank" rel="noopener noreferrer">
+            <button
+              type="button"
+              className="appointment-btn red-btn"
+              onClick={() => openCart()}
+            >
               Book an Appointment
-            </a>
+            </button>
           </div>
         </section>
       </div>
@@ -121,14 +126,23 @@ export const ServicesPage: React.FC = () => {
                         </div>
                       ))}
 
-                      <a
-                        href={cat.bookingUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="accordion-service-book-btn"
+                      <button
+                        type="button"
+                        className="accordion-service-book-btn red-btn"
+                        onClick={() => {
+                          const primary = cat.services[0];
+                          openCart({
+                            id: `services-page-${cat.id}`,
+                            name: `${cat.title}: ${primary ? primary.name : 'Salon Service'}`,
+                            category: cat.title,
+                            price: primary ? parseFloat(primary.price.replace(/[^0-9.]/g, '')) : 85,
+                            priceFormatted: primary ? primary.price : '$85.00',
+                            duration: '45 min'
+                          });
+                        }}
                       >
                         Book now
-                      </a>
+                      </button>
                     </div>
                   )}
                 </div>

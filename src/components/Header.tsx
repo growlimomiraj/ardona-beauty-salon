@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { SALON_INFO } from '../data/salonData';
+import { useBookingCart } from '../context/BookingCartContext';
 
 interface HeaderProps {
   activePage: string;
@@ -8,6 +9,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { openCart, cartItems } = useBookingCart();
 
   const navItems = [
     { id: 'home', label: 'Home' },
@@ -109,22 +111,36 @@ export const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => 
                   </li>
                 ))}
                 <li className="menu-item menu-item-book-mobile">
-                  <a
-                    href={SALON_INFO.bookingUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    type="button"
                     className="mobile-drawer-book-btn"
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      openCart();
+                    }}
                   >
-                    Book now
-                  </a>
+                    Book now {cartItems.length > 0 && `(${cartItems.length})`}
+                  </button>
                 </li>
               </ul>
             </div>
 
-            <div className="book-now">
-              <a href={SALON_INFO.bookingUrl} target="_blank" rel="noopener noreferrer">
+            <div className="book-now" style={{ display: 'flex', alignItems: 'center' }}>
+              <button
+                type="button"
+                className="header-cart-btn"
+                onClick={() => openCart()}
+                title="View Booking Cart"
+              >
+                🛒 <span className="header-cart-count">{cartItems.length}</span>
+              </button>
+              <button
+                type="button"
+                className="book-now-btn"
+                onClick={() => openCart()}
+              >
                 Book now
-              </a>
+              </button>
             </div>
 
             <div className="mobile-burger">

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { SALON_INFO } from '../data/salonData';
+import { useBookingCart } from '../context/BookingCartContext';
 
 export const ContactPage: React.FC = () => {
+  const { openCart } = useBookingCart();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -29,9 +31,13 @@ export const ContactPage: React.FC = () => {
         >
           <h1>Contact us</h1>
           <div className="appointment">
-            <a href={SALON_INFO.bookingUrl} target="_blank" rel="noopener noreferrer">
+            <button
+              type="button"
+              className="appointment-btn red-btn"
+              onClick={() => openCart()}
+            >
               Book an Appointment
-            </a>
+            </button>
           </div>
         </section>
       </div>
@@ -221,20 +227,15 @@ export const ContactPage: React.FC = () => {
 
                 <button
                   type="submit"
+                  className="red-btn"
                   style={{
                     width: '100%',
                     padding: '16px',
-                    background: '#C59D5F',
-                    border: 'none',
-                    color: '#000',
-                    fontFamily: 'Montserrat-Bold',
                     fontSize: '15px',
-                    textTransform: 'uppercase',
                     borderRadius: '4px',
                     cursor: 'pointer',
                     fontWeight: 700,
-                    letterSpacing: '1px',
-                    transition: 'opacity 0.2s'
+                    letterSpacing: '1px'
                   }}
                 >
                   Submit Inquiry

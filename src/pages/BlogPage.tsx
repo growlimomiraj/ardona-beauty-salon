@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SALON_INFO } from '../data/salonData';
+import { useBookingCart } from '../context/BookingCartContext';
 
 interface BlogPost {
   id: string;
@@ -123,6 +123,7 @@ const BLOG_POSTS: BlogPost[] = [
 
 export const BlogPage: React.FC = () => {
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
+  const { openCart } = useBookingCart();
 
   return (
     <div className="blog-page-view">
@@ -133,9 +134,13 @@ export const BlogPage: React.FC = () => {
         >
           <h1>Blog</h1>
           <div className="appointment">
-            <a href={SALON_INFO.bookingUrl} target="_blank" rel="noopener noreferrer">
+            <button
+              type="button"
+              className="appointment-btn red-btn"
+              onClick={() => openCart()}
+            >
               Book an Appointment
-            </a>
+            </button>
           </div>
         </section>
       </div>
@@ -172,24 +177,17 @@ export const BlogPage: React.FC = () => {
                   <p>{post.excerpt}</p>
                   <button
                     type="button"
-                    className="read-more-btn"
+                    className="read-more-btn red-btn"
                     style={{
-                      background: 'none',
-                      border: 'none',
-                      color: '#C59D5F',
-                      fontFamily: 'Montserrat-Bold',
-                      fontSize: '15px',
-                      textTransform: 'uppercase',
-                      padding: 0,
-                      cursor: 'pointer',
-                      display: 'inline-block'
+                      padding: '10px 22px',
+                      fontSize: '13px'
                     }}
                     onClick={(e) => {
                       e.stopPropagation();
                       setSelectedPost(post);
                     }}
                   >
-                    Read more...
+                    Read more →
                   </button>
                 </div>
               </div>
@@ -270,9 +268,13 @@ export const BlogPage: React.FC = () => {
 
             <div style={{ marginTop: '35px', paddingTop: '25px', borderTop: '1px solid #282828', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px' }}>
               <div className="appointment">
-                <a href={SALON_INFO.bookingUrl} target="_blank" rel="noopener noreferrer">
+                <button
+                  type="button"
+                  className="appointment-btn red-btn"
+                  onClick={() => openCart()}
+                >
                   Book an Appointment
-                </a>
+                </button>
               </div>
               <button
                 type="button"

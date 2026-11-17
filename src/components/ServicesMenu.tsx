@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useBookingCart } from '../context/BookingCartContext';
 
 interface SubService {
   name: string;
@@ -334,6 +335,7 @@ export const CATEGORIES: ServiceCategory[] = [
 
 export const ServicesMenu: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const { openCart } = useBookingCart();
 
   const toggleCategory = (id: string) => {
     setActiveCategory(activeCategory === id ? null : id);
@@ -393,9 +395,23 @@ export const ServicesMenu: React.FC = () => {
                     </div>
                   ))}
 
-                  <a href={cat.bookingUrl} target="_blank" rel="noopener noreferrer">
+                  <button
+                    type="button"
+                    className="service-book-now-btn red-btn"
+                    onClick={() => {
+                      const primary = cat.services[0];
+                      openCart({
+                        id: `service-${cat.id}`,
+                        name: `${cat.title} - ${primary.name}`,
+                        category: cat.title,
+                        price: parseFloat(primary.price.replace(/[^0-9.]/g, '')),
+                        priceFormatted: primary.price,
+                        duration: '45 min'
+                      });
+                    }}
+                  >
                     Book now
-                  </a>
+                  </button>
                 </div>
               </div>
             );

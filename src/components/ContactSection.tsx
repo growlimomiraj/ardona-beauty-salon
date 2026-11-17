@@ -1,7 +1,9 @@
 import React from 'react';
 import { SALON_INFO } from '../data/salonData';
+import { useBookingCart } from '../context/BookingCartContext';
 
 export const ContactSection: React.FC = () => {
+  const { openCart } = useBookingCart();
   return (
     <section id="contact" className="section-contact-teaser">
       <div className="container">
@@ -63,15 +65,14 @@ export const ContactSection: React.FC = () => {
             </ul>
 
             <div style={{ marginTop: '35px' }}>
-              <a
-                href={SALON_INFO.bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="accordion-service-book-btn"
+              <button
+                type="button"
+                className="accordion-service-book-btn red-btn"
                 style={{ textAlign: 'center', width: '100%', maxWidth: '320px' }}
+                onClick={() => openCart()}
               >
                 Book An Appointment
-              </a>
+              </button>
             </div>
           </div>
 

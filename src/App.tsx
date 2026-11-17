@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { BookingCartProvider } from './context/BookingCartContext';
+import { BookingCartModal } from './components/BookingCartModal';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { MobileBottomBar } from './components/MobileBottomBar';
@@ -55,7 +57,7 @@ export const App: React.FC = () => {
   };
 
   return (
-    <>
+    <BookingCartProvider>
       <Header activePage={activePage} setActivePage={handleNavClick} />
 
       <main id="primary" className="site-main">
@@ -69,7 +71,8 @@ export const App: React.FC = () => {
 
       <Footer onNavClick={handleNavClick} />
       <MobileBottomBar />
-    </>
+      <BookingCartModal />
+    </BookingCartProvider>
   );
 };
 

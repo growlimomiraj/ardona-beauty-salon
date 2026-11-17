@@ -1,7 +1,8 @@
 import React from 'react';
-import { SALON_INFO } from '../data/salonData';
+import { useBookingCart } from '../context/BookingCartContext';
 
 export const PromotionsView: React.FC = () => {
+  const { openCart } = useBookingCart();
   return (
     <div className="promotions-page-wrapper">
       {/* Banner */}
@@ -41,15 +42,22 @@ export const PromotionsView: React.FC = () => {
                 <li>✓ Women Wash Cut & Blow Dry: <span style={{ color: '#C59D5F', fontWeight: 700 }}>$85.50</span> (Regular $95)</li>
               </ul>
               <div>
-                <a
-                  href={SALON_INFO.bookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="accordion-service-book-btn"
+                <button
+                  type="button"
+                  className="accordion-service-book-btn red-btn"
                   style={{ display: 'inline-block', padding: '14px 40px', width: 'auto' }}
+                  onClick={() => openCart({
+                    id: 'fall-discount-bundle',
+                    name: 'Fall Online Discount Bundle',
+                    category: 'Promotions',
+                    price: 85.50,
+                    priceFormatted: '$85.50',
+                    duration: '45 min',
+                    note: '10% online booking discount applied'
+                  })}
                 >
                   Book with Fall Discount Now
-                </a>
+                </button>
               </div>
             </div>
           </div>

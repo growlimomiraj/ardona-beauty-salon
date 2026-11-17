@@ -132,13 +132,22 @@ header .menu ul li a:hover {
 }
 .book-now a {
   font-family: "Montserrat-Bold";
-  color: #FFF;
+  color: #FFF !important;
   font-size: 12px;
   letter-spacing: 1.754px;
   text-transform: uppercase;
   display: block;
-  border: 1px solid #BFC3CF;
-  padding: 10px 29px;
+  background: #E50914 !important;
+  border: 1px solid #E50914 !important;
+  padding: 10px 24px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.book-now a:hover {
+  background: #C62828 !important;
+  border-color: #C62828 !important;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.45);
 }
 .menu-item-book-mobile {
   display: none;
@@ -177,19 +186,24 @@ section.section-banner {
 }
 .appointment a {
   font-family: "Montserrat-Bold";
-  background: #FFF;
-  border: 1px solid #fff;
-  color: #151515;
+  background: #E50914 !important;
+  border: 1px solid #E50914 !important;
+  color: #FFFFFF !important;
   font-size: 18px;
   line-height: 160%;
   text-transform: uppercase;
   padding: 13px 28px;
   display: inline-block;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.45);
 }
 .appointment a:hover {
-  background: transparent;
-  border-color: #C59D5F;
-  color: #C59D5F;
+  background: #C62828 !important;
+  border-color: #C62828 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 20px rgba(229, 9, 20, 0.6);
 }
 .flex-item {
   display: flex;
@@ -344,8 +358,9 @@ section.section-about::before {
 }
 .accordion__content a {
   font-family: "Montserrat-Bold";
-  background: #FFF;
-  color: #151515;
+  background: #E50914 !important;
+  border: 1px solid #E50914 !important;
+  color: #FFFFFF !important;
   text-align: center;
   font-size: 18px;
   line-height: 160%;
@@ -354,10 +369,16 @@ section.section-about::before {
   display: inline-block;
   width: 100%;
   margin-bottom: 25px;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.45);
+  transition: all 0.3s ease;
 }
 .accordion__content a:hover {
-  background: #C59D5F;
-  color: #fff;
+  background: #C62828 !important;
+  border-color: #C62828 !important;
+  color: #fff !important;
+  box-shadow: 0 6px 20px rgba(229, 9, 20, 0.6);
 }
 .toggle-button img {
   transition: 0.5s;
@@ -1012,9 +1033,9 @@ section.section-services.after .brd {
         display: inline-block !important;
         margin-top: 10px !important;
         padding: 12px 28px !important;
-        background: transparent !important;
-        border: 1px solid #C59D5F !important;
-        color: #C59D5F !important;
+        background: #E50914 !important;
+        border: 1px solid #E50914 !important;
+        color: #FFFFFF !important;
         font-family: "Montserrat-Bold", sans-serif !important;
         font-size: 12px !important;
         letter-spacing: 1.8px !important;
@@ -1022,10 +1043,14 @@ section.section-services.after .brd {
         text-align: center !important;
         border-radius: 2px !important;
         transition: all 0.3s ease !important;
+        box-shadow: 0 4px 15px rgba(229, 9, 20, 0.45) !important;
+        cursor: pointer !important;
     }
     .mobile-drawer-book-btn:hover {
-        background: #C59D5F !important;
-        color: #000000 !important;
+        background: #C62828 !important;
+        border-color: #C62828 !important;
+        color: #FFFFFF !important;
+        box-shadow: 0 6px 20px rgba(229, 9, 20, 0.6) !important;
     }
 	.section-services .heading::after {
 		content: none;
@@ -1104,20 +1129,27 @@ section.section-services.after .brd {
       justify-content: space-between;
       z-index: 30;
     }
-    .fixed-bootom a {
-		background: #C59D5F;
-		border: 2px solid #C59D5F;
-		font-size: 17px;
-		color: #FFFFFF;
-		display: flex;
-		padding: 14px 5px;
-		width: 50%;
-		justify-content: center;
+    .fixed-bootom a,
+    .fixed-bootom button {
+		background: #E50914 !important;
+		border: 1px solid #E50914 !important;
+		font-size: 15px !important;
+		color: #FFFFFF !important;
+		display: flex !important;
+		padding: 14px 5px !important;
+		width: 50% !important;
+		justify-content: center !important;
+        align-items: center !important;
+        font-family: "Montserrat-Bold", sans-serif !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+        cursor: pointer !important;
     }
-    .fixed-bootom a:last-child {
-      background: #815d25;
-      border: 2px solid #815d25;
-      width: 70%;
+    .fixed-bootom a:last-child,
+    .fixed-bootom button:last-child {
+      background: #B71C1C !important;
+      border: 1px solid #B71C1C !important;
+      width: 50% !important;
     }
 	footer {
 		margin-bottom: 58px;
@@ -1383,20 +1415,24 @@ section.section-services.after .brd {
 }
 .virtualconsultbutton {
   display: inline-block;
-  background: #C59D5F;
-  color: #000;
+  background: #E50914 !important;
+  color: #FFF !important;
   font-family: "Montserrat-Bold", 'Montserrat', sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   padding: 14px 32px;
   letter-spacing: 1.5px;
-  border: 1px solid #C59D5F;
+  border: 1px solid #E50914 !important;
+  border-radius: 2px;
   transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.45);
 }
 .virtualconsultbutton:hover {
-  background: transparent;
-  color: #FFF;
-  border-color: #FFF;
+  background: #C62828 !important;
+  border-color: #C62828 !important;
+  color: #FFF !important;
+  box-shadow: 0 6px 20px rgba(229, 9, 20, 0.6);
 }
 
 /* Reviews layout matching One Salon */
@@ -1636,4 +1672,634 @@ section.section-services.after .brd {
   width: 24px;
   border-radius: 10px;
 }
+
+/* ==================== ALL BUTTONS MUST BE RED SYSTEM ==================== */
+:root {
+  --salon-red: #E50914;
+  --salon-red-hover: #C62828;
+  --salon-red-active: #B71C1C;
+  --salon-red-glow: rgba(229, 9, 20, 0.45);
+}
+
+/* Universal Red Buttons across website */
+.book-now a,
+.book-now button,
+.book-now-btn,
+.appointment a,
+.appointment button,
+.appointment-btn,
+.mobile-drawer-book-btn,
+.virtualconsultbutton,
+.accordion-service-book-btn,
+.accordion__content a,
+.accordion__content button,
+.service-book-now-btn,
+.read-more-btn,
+.contact-form-card button[type="submit"],
+.mobile-bottom-book-btn,
+.cart-btn-primary,
+.red-btn {
+  background-color: var(--salon-red) !important;
+  background: var(--salon-red) !important;
+  border: 1px solid var(--salon-red) !important;
+  color: #FFFFFF !important;
+  font-family: "Montserrat-Bold", sans-serif !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  border-radius: 3px !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  box-shadow: 0 4px 14px var(--salon-red-glow) !important;
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+.book-now a:hover,
+.book-now button:hover,
+.book-now-btn:hover,
+.appointment a:hover,
+.appointment button:hover,
+.appointment-btn:hover,
+.mobile-drawer-book-btn:hover,
+.virtualconsultbutton:hover,
+.accordion-service-book-btn:hover,
+.accordion__content a:hover,
+.accordion__content button:hover,
+.service-book-now-btn:hover,
+.read-more-btn:hover,
+.contact-form-card button[type="submit"]:hover,
+.mobile-bottom-book-btn:hover,
+.cart-btn-primary:hover,
+.red-btn:hover:not(:disabled) {
+  background-color: var(--salon-red-hover) !important;
+  background: var(--salon-red-hover) !important;
+  border-color: var(--salon-red-hover) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 20px rgba(229, 9, 20, 0.6) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Header Cart Count Badge */
+.header-cart-btn {
+  background: #1A1A1A;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  padding: 8px 14px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: all 0.2s ease;
+}
+.header-cart-btn:hover {
+  border-color: var(--salon-red);
+  background: #222222;
+}
+.header-cart-count {
+  background: var(--salon-red);
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 50%;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* ==================== BOOKING CART MODAL STYLES ==================== */
+.cart-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.cart-modal-container {
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 680px;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(229, 9, 20, 0.15);
+  overflow: hidden;
+  animation: modalSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalSlideUp {
+  from { opacity: 0; transform: translateY(30px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.cart-modal-header {
+  padding: 24px 28px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #141414;
+}
+
+.cart-modal-badge {
+  display: inline-block;
+  background: rgba(229, 9, 20, 0.15);
+  color: var(--salon-red);
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  padding: 3px 8px;
+  border-radius: 2px;
+  margin-bottom: 6px;
+  border: 1px solid rgba(229, 9, 20, 0.3);
+}
+
+.cart-modal-title {
+  color: #FFFFFF;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 24px;
+  margin: 0 0 4px;
+  letter-spacing: 0.5px;
+}
+
+.cart-modal-subtitle {
+  color: #999999;
+  font-size: 13px;
+  margin: 0;
+}
+
+.cart-modal-close-btn {
+  background: #202020 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #AAAAAA !important;
+  width: 36px;
+  height: 36px;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: none !important;
+  transition: all 0.2s ease !important;
+  padding: 0 !important;
+}
+.cart-modal-close-btn:hover {
+  background: var(--salon-red) !important;
+  border-color: var(--salon-red) !important;
+  color: #FFFFFF !important;
+}
+
+.cart-modal-body {
+  padding: 24px 28px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.cart-error-banner {
+  background: rgba(229, 9, 20, 0.2);
+  border: 1px solid var(--salon-red);
+  color: #FFCDD2;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.cart-section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.cart-section-title-row h3,
+.cart-addons-title {
+  color: #FFFFFF;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.cart-clear-link {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #888888 !important;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 0 !important;
+}
+.cart-clear-link:hover {
+  color: var(--salon-red) !important;
+}
+
+.cart-empty-state {
+  text-align: center;
+  padding: 30px 20px;
+  background: #161616;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.cart-empty-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.cart-empty-text {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Montserrat-Bold", sans-serif;
+  margin: 0 0 6px;
+}
+.cart-empty-sub {
+  color: #888888;
+  font-size: 13px;
+  margin: 0;
+}
+
+.cart-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.cart-item-card {
+  background: #181818;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.cart-item-category {
+  color: #C59D5F;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 2px;
+}
+.cart-item-name {
+  color: #FFFFFF;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 16px;
+  margin: 0 0 4px;
+}
+.cart-item-duration {
+  color: #888888;
+  font-size: 12px;
+  display: block;
+}
+.cart-item-note {
+  color: #AAAAAA;
+  font-size: 11px;
+  margin: 4px 0 0;
+  font-style: italic;
+}
+
+.cart-item-actions {
+  text-align: right;
+  flex-shrink: 0;
+}
+.cart-item-price {
+  color: #FFFFFF;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 17px;
+  display: block;
+  margin-bottom: 6px;
+}
+.cart-item-remove-btn {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #FF5252 !important;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 0 !important;
+}
+.cart-item-remove-btn:hover {
+  text-decoration: underline !important;
+}
+
+.cart-addons-section {
+  background: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+}
+.cart-addons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+@media (max-width: 600px) {
+  .cart-addons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.cart-addon-item {
+  background: #1C1C1C;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cart-addon-item.added {
+  border-color: rgba(76, 175, 80, 0.3);
+  background: rgba(76, 175, 80, 0.05);
+}
+.cart-addon-name {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+}
+.cart-addon-details {
+  color: #888888;
+  font-size: 11px;
+}
+.cart-addon-btn {
+  font-size: 11px !important;
+  padding: 7px 12px !important;
+  border-radius: 4px !important;
+  white-space: nowrap;
+}
+.cart-addon-btn.btn-added {
+  background: #2E7D32 !important;
+  border-color: #2E7D32 !important;
+  color: #FFF !important;
+  cursor: default !important;
+  box-shadow: none !important;
+}
+
+.cart-schedule-section {
+  margin-bottom: 24px;
+}
+.cart-schedule-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 12px;
+  margin-bottom: 14px;
+}
+@media (max-width: 500px) {
+  .cart-schedule-row {
+    grid-template-columns: 1fr;
+  }
+}
+.cart-form-group {
+  margin-bottom: 14px;
+}
+.cart-form-group label {
+  display: block;
+  color: #CCCCCC;
+  font-size: 12px;
+  font-family: "Montserrat-Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 6px;
+}
+.cart-input {
+  width: 100%;
+  background: #1C1C1C;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  padding: 12px 14px;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.cart-input:focus {
+  border-color: var(--salon-red);
+}
+
+.cart-times-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+@media (max-width: 480px) {
+  .cart-times-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.cart-time-chip {
+  background: #1A1A1A !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #DDDDDD !important;
+  box-shadow: none !important;
+  padding: 10px 8px !important;
+  font-size: 12px !important;
+  font-family: "Montserrat-Bold", sans-serif !important;
+  border-radius: 4px !important;
+  cursor: pointer;
+  transition: all 0.2s ease !important;
+}
+.cart-time-chip:hover {
+  border-color: var(--salon-red) !important;
+  color: #FFFFFF !important;
+}
+.cart-time-chip.selected {
+  background: var(--salon-red) !important;
+  border-color: var(--salon-red) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 2px 10px var(--salon-red-glow) !important;
+}
+
+.cart-summary-box {
+  background: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+.cart-summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #AAAAAA;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.cart-summary-row.total-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 10px;
+  margin-top: 8px;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-family: "Montserrat-Bold", sans-serif;
+}
+.summary-total-price {
+  color: var(--salon-red);
+  font-size: 22px;
+}
+.cart-deposit-notice {
+  font-size: 11px;
+  color: #888888;
+  margin: 10px 0 0;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.cart-modal-footer {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+.cart-btn-primary {
+  flex: 1;
+  padding: 16px 24px !important;
+  font-size: 14px !important;
+}
+.cart-btn-secondary {
+  background: #222222 !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #FFFFFF !important;
+  padding: 14px 20px !important;
+  font-family: "Montserrat-Bold", sans-serif !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  border-radius: 3px !important;
+  cursor: pointer;
+  box-shadow: none !important;
+}
+.cart-btn-secondary:hover {
+  background: #2E2E2E !important;
+  border-color: #FFFFFF !important;
+}
+
+.cart-step-summary-card {
+  background: #171717;
+  border-left: 3px solid var(--salon-red);
+  padding: 14px 18px;
+  border-radius: 4px;
+  margin-bottom: 18px;
+}
+.cart-step-summary-card h4 {
+  color: #FFFFFF;
+  font-family: "Montserrat-Bold", sans-serif;
+  margin: 0 0 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.cart-step-summary-card p {
+  color: #CCCCCC;
+  font-size: 13px;
+  margin: 0 0 4px;
+}
+
+.cart-confirmed-view {
+  text-align: center;
+  padding: 10px 10px 20px;
+}
+.confirmed-badge-icon {
+  width: 60px;
+  height: 60px;
+  background: #2E7D32;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 0 25px rgba(46, 125, 50, 0.4);
+}
+.confirmed-title {
+  color: #FFFFFF;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+.confirmed-lead {
+  color: #CCCCCC;
+  font-size: 15px;
+  margin: 0 0 24px;
+}
+.confirmed-details-card {
+  background: #181818;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 18px 22px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.confirmed-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+}
+.confirmed-row:last-child {
+  border-bottom: none;
+}
+.confirmed-row span {
+  color: #888888;
+}
+.confirmed-row strong {
+  color: #FFFFFF;
+}
+.confirmed-price {
+  color: var(--salon-red) !important;
+  font-size: 16px;
+}
+.confirmed-sms-notice {
+  color: #AAAAAA;
+  font-size: 13px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+.confirmed-actions-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 

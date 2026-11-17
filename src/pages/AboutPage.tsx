@@ -1,8 +1,9 @@
 import React from 'react';
-import { SALON_INFO } from '../data/salonData';
 import { ReviewsSection } from '../components/ReviewsSection';
+import { useBookingCart } from '../context/BookingCartContext';
 
 export const AboutPage: React.FC = () => {
+  const { openCart } = useBookingCart();
   return (
     <div className="about-page-view">
       <div className="container full">
@@ -12,9 +13,13 @@ export const AboutPage: React.FC = () => {
         >
           <h1>About Us</h1>
           <div className="appointment">
-            <a href={SALON_INFO.bookingUrl} target="_blank" rel="noopener noreferrer">
+            <button
+              type="button"
+              className="appointment-btn red-btn"
+              onClick={() => openCart()}
+            >
               Book an Appointment
-            </a>
+            </button>
           </div>
         </section>
       </div>

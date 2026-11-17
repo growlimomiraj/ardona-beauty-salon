@@ -1,7 +1,9 @@
 import React from 'react';
-import { SALON_INFO } from '../data/salonData';
+import { useBookingCart } from '../context/BookingCartContext';
 
 export const Hero: React.FC = () => {
+  const { openCart } = useBookingCart();
+
   return (
     <>
       <div className="container full">
@@ -20,9 +22,13 @@ export const Hero: React.FC = () => {
               Hair Salon in NYC
             </h1>
             <div className="appointment">
-              <a href={SALON_INFO.bookingUrl} target="_blank" rel="noopener noreferrer">
+              <button
+                type="button"
+                className="appointment-btn"
+                onClick={() => openCart()}
+              >
                 Book an Appointment
-              </a>
+              </button>
             </div>
           </div>
         </section>
@@ -33,14 +39,21 @@ export const Hero: React.FC = () => {
           New clients get your <span style={{ color: '#C59D5F' }}>virtual consultation</span> here
         </h1>
         <h5 className="consultation" style={{ textAlign: 'center' }}>
-          <a
+          <button
+            type="button"
             className="virtualconsultbutton"
-            href={SALON_INFO.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            onClick={() => openCart({
+              id: 'virtual-consult',
+              name: 'Virtual Hair Consultation',
+              category: 'Consultation',
+              price: 0,
+              priceFormatted: 'Free',
+              duration: '20 min',
+              note: 'Personalized video/phone hair consultation'
+            })}
           >
             VIRTUAL CONSULTATION
-          </a>
+          </button>
         </h5>
       </div>
     </>
