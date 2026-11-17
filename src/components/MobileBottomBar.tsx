@@ -8,14 +8,14 @@ export const MobileBottomBar: React.FC = () => {
   return (
     <div className="fixed-bootom">
       <a href={`tel:${SALON_INFO.phoneRaw}`}>
-        📞 Click to Call
+        📞 CLICK TO CALL
       </a>
       <button
         type="button"
         className="mobile-bottom-book-btn"
         onClick={() => openCart()}
       >
-        📅 Book Now {cartItems.length > 0 && `(${cartItems.length})`}
+        📅 BOOK NOW {cartItems.length > 0 && `(${cartItems.length})`}
       </button>
     </div>
   );
