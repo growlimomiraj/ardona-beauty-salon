@@ -125,24 +125,6 @@ export const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => 
               </ul>
             </div>
 
-            <div className="book-now" style={{ display: 'flex', alignItems: 'center' }}>
-              <button
-                type="button"
-                className="header-cart-btn"
-                onClick={() => openCart()}
-                title="View Booking Cart"
-              >
-                🛒 <span className="header-cart-count">{cartItems.length}</span>
-              </button>
-              <button
-                type="button"
-                className="book-now-btn"
-                onClick={() => openCart()}
-              >
-                Book now
-              </button>
-            </div>
-
             <div className="mobile-burger">
               <div
                 className={`owerlay ${mobileMenuOpen ? 'active' : ''}`}
