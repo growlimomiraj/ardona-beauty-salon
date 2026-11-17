@@ -17,11 +17,11 @@ export const Hero: React.FC = () => {
           </div>
 
           <div className="heading-banner">
+            <div className="hero-eyebrow">Expert Hair Salon in NYC</div>
             <h1>
-              <span>Ardona Salon</span> - Expert <br />
-              Hair Salon in NYC
+              <span>Your Dream Look</span> <br />
+              Starts at Ardona Salon
             </h1>
-            <p className="hero-tagline">Your Dream Look Starts at Ardona Salon</p>
             <div className="appointment">
               <button
                 type="button"

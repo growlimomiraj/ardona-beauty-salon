@@ -168,31 +168,37 @@ section.section-banner {
   align-items: end;
 }
 .heading-banner {
-  background: #0A0A0A;
-  padding: 50px 50px 50px 225px;
-  width: 960px;
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.90) 0%, rgba(10, 10, 10, 0.70) 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-left: 3px solid #C59D5F;
+  padding: 45px 50px 45px 55px;
+  width: auto;
+  max-width: 860px;
+  margin-left: 100px;
+  margin-bottom: 55px;
+  border-radius: 4px;
+}
+.hero-eyebrow {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #C59D5F;
+  margin-bottom: 12px;
+  display: inline-block;
 }
 .heading-banner h1 {
   font-family: "Montserrat-Bold";
   color: #C59D5F;
-  font-size: 45px;
-  line-height: normal;
+  font-size: 42px;
+  line-height: 1.25;
   text-transform: uppercase;
-  margin: 0 0 18px 0;
+  margin: 0 0 28px 0;
 }
 .heading-banner span {
   font-family: "Montserrat-Light";
   color: #FFF;
-}
-.hero-tagline {
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  color: #FFFFFF;
-  letter-spacing: 0.5px;
-  margin: 0 0 32px 0;
-  line-height: 1.4;
-  text-transform: none;
 }
 .appointment a {
   font-family: "Montserrat-Bold";
@@ -1105,29 +1111,47 @@ section.section-services.after .brd {
     max-width: 180px !important;
   }
   section.section-banner {
+    position: relative !important;
     height: auto !important;
     min-height: 0 !important;
     background-image: none !important;
-    display: flex !important;
-    flex-direction: column !important;
+    display: block !important;
     padding: 0 !important;
+    overflow: hidden !important;
   }
   .mobile-hero-media {
     display: block !important;
     width: 100% !important;
+    position: relative !important;
     background: #000;
   }
   .mobile-storefront-img {
     width: 100% !important;
-    height: auto !important;
+    height: 520px !important;
+    max-height: 72vh !important;
     display: block !important;
-    object-fit: contain !important;
-    filter: brightness(0.88) contrast(1.03) !important;
+    object-fit: cover !important;
+    filter: brightness(0.68) contrast(1.08) !important;
   }
   .heading-banner {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     width: 100% !important;
-    padding: 30px 20px 25px 20px !important;
-    background: #0A0A0A !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border-left: none !important;
+    padding: 40px 20px 24px 20px !important;
+    background: linear-gradient(to top, rgba(10, 10, 10, 0.96) 0%, rgba(10, 10, 10, 0.72) 60%, rgba(10, 10, 10, 0.20) 90%, transparent 100%) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    z-index: 2 !important;
+  }
+  .hero-eyebrow {
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 8px !important;
   }
   .entry-content .img-blog {
 		width: 100%;
@@ -1212,12 +1236,9 @@ section.section-services.after .brd {
 		font-size: 16px;
 	}
 	.heading-banner h1 {
-		font-size: 35px;
-		margin: 0 0 14px 0;
-	}
-	.hero-tagline {
-		font-size: 17px;
-		margin: 0 0 22px 0;
+		font-size: 28px;
+		margin: 0 0 18px 0;
+		line-height: 1.25;
 	}
 	.appointment a {
 		font-size: 15px;
@@ -1270,13 +1291,10 @@ section.section-services.after .brd {
 		margin-bottom: 40px;
 	}
 	.heading-banner h1 {
-        font-size: 25px;
-		margin: 0 0 10px 0;
+        font-size: 24px;
+		margin: 0 0 16px 0;
+		line-height: 1.25;
     }
-	.hero-tagline {
-		font-size: 15px;
-		margin: 0 0 18px 0;
-	}
 	section.section-banner {
         height: auto;
     }
@@ -1376,13 +1394,10 @@ section.section-services.after .brd {
 		margin-bottom: 20px;
 	}
 	.heading-banner h1 {
-        font-size: 20px;
-        margin: 0 0 8px 0;
+        font-size: 21px;
+        margin: 0 0 16px 0;
+		line-height: 1.25;
     }
-	.hero-tagline {
-		font-size: 14px;
-		margin: 0 0 16px 0;
-	}
 	.heading-banner {
         padding: 30px 20px 20px 15px;
         width: 100%;
