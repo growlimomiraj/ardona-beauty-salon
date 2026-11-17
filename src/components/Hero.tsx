@@ -21,6 +21,7 @@ export const Hero: React.FC = () => {
               <span>Ardona Salon</span> - Expert <br />
               Hair Salon in NYC
             </h1>
+            <p className="hero-tagline">Your Dream Look Starts at Ardona Salon</p>
             <div className="appointment">
               <button
                 type="button"
